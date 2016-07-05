@@ -1,0 +1,72 @@
+.Excerpt_1 {
+  transform: translateX(1500%) scale(20) rotate(0deg);
+}
+
+.Excerpt_2 {
+  transform: translateX(1200%) scale(20) rotate(-9deg);
+}
+
+.Excerpt_3 {
+  transform: translateX(1200%) scale(20) rotate(-3deg);
+}
+
+@-webkit-keyframes shift {
+  50% { transform: translateX(-1500%) scale(20) rotate(3deg)}
+  51% { transform: scale(1) }
+  100% { transform: scale(1) }
+}
+
+
+@-moz-keyframes shift {
+  50% { transform: translateX(-1500%) scale(20) rotate(3deg)}
+  51% { transform: scale(1) }
+  100% { transform: scale(1) }
+}
+
+@keyframes shift {
+  50% { transform: translateX(-1500%) scale(20) rotate(3deg) }
+  51% { transform: scale(1) }
+  100% { transform: scale(1) }
+}
+  
+.content .Excerpt_1 {
+  -webkit-animation: shift 25s linear;
+  -moz-animation: shift 25s linear;
+  animation: shift 25s linear;
+}
+
+.content .Excerpt_2 {
+  -webkit-animation: shift 25s 13s linear;
+  -moz-animation: shift 25s 25s linear;
+  animation: shift 25s 25s linear;
+}
+
+.content .Excerpt_3 {
+  -webkit-animation: shift 25s 26s linear;
+  -moz-animation: shift 25s 50s linear;
+  animation: shift 25s 50s linear;
+}
+
+
+
+
+
+/*
+@-webkit-keyframes shift {
+  0% { transform: translate(-500%, -500%) }
+  10% { transform: translateY(0%) }
+
+
+@-moz-keyframes shift {
+ 
+}
+
+@keyframes shift {
+
+}
+  
+.content h1 {
+  -webkit-animation: shift 10s linear;
+  -moz-animation: shift 10s linear;
+  animation: shift 10s linear;
+}*/
